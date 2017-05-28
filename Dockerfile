@@ -23,7 +23,7 @@ ADD supervisord.conf /etc/supervisord.conf
 ADD sonarr.ini /etc/supervisord.d/sonarr.ini
 
 RUN chmod 755 /sbin/start.sh
-EXPOSE 5000 9010
+EXPOSE 8989 9010
 
 VOLUME /config
 VOLUME /downloads
