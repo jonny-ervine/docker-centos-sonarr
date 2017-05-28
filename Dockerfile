@@ -13,7 +13,7 @@ RUN yum-config-manager --add-repo http://download.mono-project.com/repo/centos/
 RUN yum install -y unzip unrar mediainfo libzen libmediainfo ffmpeg git supervisor gettext mono-core mono-devel sqlite
 RUN yum clean all
 
-RUN wget http://update.sonarr.tv/v2/master/mono/NzbDrone.master.tar.gz
+RUN curl http://update.sonarr.tv/v2/master/mono/NzbDrone.master.tar.gz -o NzbDrone.master.tar.gz
 RUN tar -xvf ~/NzbDrone.master.tar.gz -C /opt/
 RUN rm -f NzbDrone.master.tar.gz
 RUN mv /opt/NzbDrone /opt/sonarr
