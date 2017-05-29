@@ -20,4 +20,4 @@ if [ ! -f "${setup}" ]; then
 fi
 
 ## Start up sonarr daemon via supervisord
-#/usr/bin/supervisord -n -c /etc/supervisord.conf
+/usr/bin/supervisord -n -c /etc/supervisord.conf
