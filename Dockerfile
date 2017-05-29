@@ -28,5 +28,4 @@ EXPOSE 8989 9010
 VOLUME /config
 VOLUME /downloads
 
-#CMD ["/sbin/start.sh"]
-CMD ["/bin/bash"]
+CMD ["/sbin/start.sh"]
