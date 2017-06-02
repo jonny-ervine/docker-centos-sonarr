@@ -15,7 +15,7 @@ if [ ! -f "${setup}" ]; then
   cp /usr/share/zoneinfo/$TZ /etc/localtime
   adduser -u $USERUID $USER
   sed -i "s/user=/user=$USER/g" /etc/supervisord.d/sonarr.ini
-  chown $USER:$USER /opt/sonarr
+  chown -R $USER:$USER /opt/sonarr
   touch $setup
 fi
 
