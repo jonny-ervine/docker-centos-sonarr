@@ -1,5 +1,5 @@
 # docker-centos-sonarr
-## Sonarr running on the latest CentOS docker image (7.0)
+## Sonarr running on the latest CentOS docker image (7.3)
 ### Sonarr Build: 2.0.0.4855
 
 The Dockerfile should intialise the CentOS image and subscribe to the EPEL repository. The pre-requisites for Sonarr are then installed via yum.
