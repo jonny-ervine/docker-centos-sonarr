@@ -1,6 +1,8 @@
 # docker-centos-sonarr
 ## Sonarr running on the latest CentOS docker image (7.3)
 ### Sonarr Build: 2.0.0.4855
+### Build Version: 2
+Date of Build: 10th July 2017
 
 The Dockerfile should intialise the CentOS image and subscribe to the EPEL repository. The pre-requisites for Sonarr are then installed via yum.
 
@@ -15,7 +17,7 @@ The Sonarr software package is downloaded as a tarball file from the Sonarr webs
 The container can be run as follows:
 
     docker pull jervine/docker-centos-sonarr
-    docker run -d -n <optional name of container> -h <optional host name of container> -e USER="<user account to run as> -e USERUID="<uid of user account"> -e TZ="<optional timezone> -v /<config directory on host>:/config/ -v /<download directory on host>:/downloads -v /<media directory on host>:/media -p 8989:8989 -p 9010:9010 jervine/docker-centos-sickrage
+    docker run -d -n <optional name of container> -h <optional host name of container> -e USER="<user account to run as> -e USERUID="<uid of user account"> -e TZ="<optional timezone> -v /<config directory on host>:/config/ -v /<download directory on host>:/downloads -v /<media directory on host>:/media -p 8989:8989 -p 9010:9010 jervine/docker-centos-sonarr
 
 The USER and USERUID variables will be used to create an unprivileged account in the container to run the Sonarr under. The startup.sh script will create this user and also inject the username into the user= parameter of the sonarr.ini supervisor file.
 
